@@ -16,7 +16,7 @@ namespace Grifindo_Payroll_system_new
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Login());
         }
     }
 }

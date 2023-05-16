@@ -10,11 +10,33 @@ using System.Windows.Forms;
 
 namespace Grifindo_Payroll_system_new
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Mainmenu frm = new Mainmenu();
+            frm.Show();
         }
     }
 }
