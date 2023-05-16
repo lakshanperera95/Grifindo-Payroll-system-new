@@ -8,26 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Grifindo_Payroll_system_new
+namespace Grifindo_Payroll_system_new.User
 {
-    public partial class Mainmenu : Form
+    public partial class FrmUserRegister : Form
     {
-        public Mainmenu()
+        public FrmUserRegister()
         {
             InitializeComponent();
         }
 
-        private void Empreg_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Mainmenu_Load(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

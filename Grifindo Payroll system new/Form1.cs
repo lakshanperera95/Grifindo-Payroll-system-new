@@ -34,9 +34,23 @@ namespace Grifindo_Payroll_system_new
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Mainmenu frm = new Mainmenu();
-            frm.Show();
+            connection con = new connection();
+            con.dataGet("Select * from [Users] where user_name ='" + txtusername.Text + "'and password ='" + txtpassword.Text + "'");
+            DataTable dt = new DataTable();
+            con.sda.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                this.Hide();
+                Mainmenu frm = new Mainmenu();
+                frm.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+         
         }
     }
 }

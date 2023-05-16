@@ -70,17 +70,19 @@
             // 
             // txtusername
             // 
+            this.txtusername.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusername.Location = new System.Drawing.Point(135, 169);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(208, 20);
+            this.txtusername.Size = new System.Drawing.Size(208, 23);
             this.txtusername.TabIndex = 4;
             // 
             // txtpassword
             // 
+            this.txtpassword.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpassword.Location = new System.Drawing.Point(135, 212);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
-            this.txtpassword.Size = new System.Drawing.Size(208, 20);
+            this.txtpassword.Size = new System.Drawing.Size(208, 23);
             this.txtpassword.TabIndex = 5;
             this.txtpassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
