@@ -75,6 +75,7 @@
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(208, 23);
             this.txtusername.TabIndex = 4;
+            this.txtusername.Text = "admin";
             // 
             // txtpassword
             // 
@@ -84,7 +85,9 @@
             this.txtpassword.PasswordChar = '*';
             this.txtpassword.Size = new System.Drawing.Size(208, 23);
             this.txtpassword.TabIndex = 5;
+            this.txtpassword.Text = "1111";
             this.txtpassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtpassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtpassword_KeyDown);
             // 
             // btnlogin
             // 
@@ -111,9 +114,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Grifindo_Payroll_system_new.Properties.Resources.giphy__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-14, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(476, 283);
+            this.pictureBox1.Size = new System.Drawing.Size(489, 283);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -137,7 +140,8 @@
             this.Name = "Login";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

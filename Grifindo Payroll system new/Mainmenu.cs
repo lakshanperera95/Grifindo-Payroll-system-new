@@ -31,5 +31,27 @@ namespace Grifindo_Payroll_system_new
         {
 
         }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            User.FrmUserRegister frm = new User.FrmUserRegister();
+            frm.MdiParent = this;
+            frm.StartPosition = FormStartPosition.CenterScreen;
+            frm.Show();
+        }
+
+        private void Mainmenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are You Want To Exit", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+
+        }
     }
 }

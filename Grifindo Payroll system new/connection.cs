@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Grifindo_Payroll_system_new
 {
@@ -21,7 +23,7 @@ namespace Grifindo_Payroll_system_new
 
         }
         public void Datasend(string SQL)
-        {
+        { 
             try
             {
                 Connection();
@@ -49,6 +51,26 @@ namespace Grifindo_Payroll_system_new
 
 
             }
+        }
+
+        public static void ErrLog(Exception ex)
+        {
+            //DateTime dtCurrentDate = DateTime.Now;
+            //FileStream fileStream = new FileStream(@"..\ErrorLog.txt", FileMode.Append);
+            //StreamWriter m_streamWriter = new StreamWriter(fileStream);
+
+            //try
+            //{
+            //    m_streamWriter.WriteLine("Date/Time :' " + string.Format("{0:dd/MM/yyyy HH:mm:ss}", dtCurrentDate) + "'frmAccount 012. Error Description " + ex.Message + " 'Location :' " + LoginManager.LocaCode + " 'User Name :' " + LoginManager.UserName.Trim() + " '");
+            //    // read from file or write to file
+            //}
+            //finally
+            //{
+            //    m_streamWriter.Close();
+            //    fileStream.Close();
+            //}
+            MessageBox.Show("Errror" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
         }
     }
 }
