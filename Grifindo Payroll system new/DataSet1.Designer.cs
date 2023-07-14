@@ -289,9 +289,17 @@ namespace Grifindo_Payroll_system_new {
             
             private global::System.Data.DataColumn columnEmp_address;
             
-            private global::System.Data.DataColumn column_Emp_address_1;
+            private global::System.Data.DataColumn columnEmp_address_1;
             
             private global::System.Data.DataColumn columnEmp_role;
+            
+            private global::System.Data.DataColumn columnEmp_Email;
+            
+            private global::System.Data.DataColumn columnEmp_salary;
+            
+            private global::System.Data.DataColumn columnEmp_Allowances;
+            
+            private global::System.Data.DataColumn columnEmp_OT;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -368,9 +376,9 @@ namespace Grifindo_Payroll_system_new {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn _Emp_address_1Column {
+            public global::System.Data.DataColumn Emp_address_1Column {
                 get {
-                    return this.column_Emp_address_1;
+                    return this.columnEmp_address_1;
                 }
             }
             
@@ -379,6 +387,38 @@ namespace Grifindo_Payroll_system_new {
             public global::System.Data.DataColumn Emp_roleColumn {
                 get {
                     return this.columnEmp_role;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Emp_EmailColumn {
+                get {
+                    return this.columnEmp_Email;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Emp_salaryColumn {
+                get {
+                    return this.columnEmp_salary;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Emp_AllowancesColumn {
+                get {
+                    return this.columnEmp_Allowances;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Emp_OTColumn {
+                get {
+                    return this.columnEmp_OT;
                 }
             }
             
@@ -419,7 +459,7 @@ namespace Grifindo_Payroll_system_new {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public dtEmpDetailsRow AdddtEmpDetailsRow(string Emp_id, string Emp_name, string Emp_Phoneno, string Emp_Birthday, string Emp_address, string _Emp_address_1, string Emp_role) {
+            public dtEmpDetailsRow AdddtEmpDetailsRow(string Emp_id, string Emp_name, string Emp_Phoneno, string Emp_Birthday, string Emp_address, string Emp_address_1, string Emp_role, string Emp_Email, string Emp_salary, string Emp_Allowances, string Emp_OT) {
                 dtEmpDetailsRow rowdtEmpDetailsRow = ((dtEmpDetailsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Emp_id,
@@ -427,8 +467,12 @@ namespace Grifindo_Payroll_system_new {
                         Emp_Phoneno,
                         Emp_Birthday,
                         Emp_address,
-                        _Emp_address_1,
-                        Emp_role};
+                        Emp_address_1,
+                        Emp_role,
+                        Emp_Email,
+                        Emp_salary,
+                        Emp_Allowances,
+                        Emp_OT};
                 rowdtEmpDetailsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowdtEmpDetailsRow);
                 return rowdtEmpDetailsRow;
@@ -456,8 +500,12 @@ namespace Grifindo_Payroll_system_new {
                 this.columnEmp_Phoneno = base.Columns["Emp_Phoneno"];
                 this.columnEmp_Birthday = base.Columns["Emp_Birthday"];
                 this.columnEmp_address = base.Columns["Emp_address"];
-                this.column_Emp_address_1 = base.Columns[" Emp_address_1"];
+                this.columnEmp_address_1 = base.Columns["Emp_address_1"];
                 this.columnEmp_role = base.Columns["Emp_role"];
+                this.columnEmp_Email = base.Columns["Emp_Email"];
+                this.columnEmp_salary = base.Columns["Emp_salary"];
+                this.columnEmp_Allowances = base.Columns["Emp_Allowances"];
+                this.columnEmp_OT = base.Columns["Emp_OT"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -473,10 +521,18 @@ namespace Grifindo_Payroll_system_new {
                 base.Columns.Add(this.columnEmp_Birthday);
                 this.columnEmp_address = new global::System.Data.DataColumn("Emp_address", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEmp_address);
-                this.column_Emp_address_1 = new global::System.Data.DataColumn(" Emp_address_1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.column_Emp_address_1);
+                this.columnEmp_address_1 = new global::System.Data.DataColumn("Emp_address_1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmp_address_1);
                 this.columnEmp_role = new global::System.Data.DataColumn("Emp_role", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEmp_role);
+                this.columnEmp_Email = new global::System.Data.DataColumn("Emp_Email", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmp_Email);
+                this.columnEmp_salary = new global::System.Data.DataColumn("Emp_salary", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmp_salary);
+                this.columnEmp_Allowances = new global::System.Data.DataColumn("Emp_Allowances", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmp_Allowances);
+                this.columnEmp_OT = new global::System.Data.DataColumn("Emp_OT", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmp_OT);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -699,17 +755,17 @@ namespace Grifindo_Payroll_system_new {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string _Emp_address_1 {
+            public string Emp_address_1 {
                 get {
                     try {
-                        return ((string)(this[this.tabledtEmpDetails._Emp_address_1Column]));
+                        return ((string)(this[this.tabledtEmpDetails.Emp_address_1Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \' Emp_address_1\' in table \'dtEmpDetails\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Emp_address_1\' in table \'dtEmpDetails\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabledtEmpDetails._Emp_address_1Column] = value;
+                    this[this.tabledtEmpDetails.Emp_address_1Column] = value;
                 }
             }
             
@@ -726,6 +782,70 @@ namespace Grifindo_Payroll_system_new {
                 }
                 set {
                     this[this.tabledtEmpDetails.Emp_roleColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Emp_Email {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtEmpDetails.Emp_EmailColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Emp_Email\' in table \'dtEmpDetails\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtEmpDetails.Emp_EmailColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Emp_salary {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtEmpDetails.Emp_salaryColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Emp_salary\' in table \'dtEmpDetails\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtEmpDetails.Emp_salaryColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Emp_Allowances {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtEmpDetails.Emp_AllowancesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Emp_Allowances\' in table \'dtEmpDetails\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtEmpDetails.Emp_AllowancesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Emp_OT {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtEmpDetails.Emp_OTColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Emp_OT\' in table \'dtEmpDetails\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtEmpDetails.Emp_OTColumn] = value;
                 }
             }
             
@@ -791,14 +911,14 @@ namespace Grifindo_Payroll_system_new {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Is_Emp_address_1Null() {
-                return this.IsNull(this.tabledtEmpDetails._Emp_address_1Column);
+            public bool IsEmp_address_1Null() {
+                return this.IsNull(this.tabledtEmpDetails.Emp_address_1Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Set_Emp_address_1Null() {
-                this[this.tabledtEmpDetails._Emp_address_1Column] = global::System.Convert.DBNull;
+            public void SetEmp_address_1Null() {
+                this[this.tabledtEmpDetails.Emp_address_1Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -811,6 +931,54 @@ namespace Grifindo_Payroll_system_new {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetEmp_roleNull() {
                 this[this.tabledtEmpDetails.Emp_roleColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEmp_EmailNull() {
+                return this.IsNull(this.tabledtEmpDetails.Emp_EmailColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEmp_EmailNull() {
+                this[this.tabledtEmpDetails.Emp_EmailColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEmp_salaryNull() {
+                return this.IsNull(this.tabledtEmpDetails.Emp_salaryColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEmp_salaryNull() {
+                this[this.tabledtEmpDetails.Emp_salaryColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEmp_AllowancesNull() {
+                return this.IsNull(this.tabledtEmpDetails.Emp_AllowancesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEmp_AllowancesNull() {
+                this[this.tabledtEmpDetails.Emp_AllowancesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEmp_OTNull() {
+                return this.IsNull(this.tabledtEmpDetails.Emp_OTColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEmp_OTNull() {
+                this[this.tabledtEmpDetails.Emp_OTColumn] = global::System.Convert.DBNull;
             }
         }
         
